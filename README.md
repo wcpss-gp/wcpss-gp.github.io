@@ -1,2 +1,3 @@
-# wcpss-gp.github.io
-World History project: North Africa Through The Ages
+# North Africa Through The Ages
+
+World History project for the history of North Africa through major world events.
