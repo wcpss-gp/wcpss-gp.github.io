@@ -1,0 +1,67 @@
+/* Import Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* GLOBAL: Resets */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CLASS: Container */
+
+.container {
+    margin: 0 auto;
+    max-width: 1287.51px;
+}
+
+/* CLASS: Fonts (set fonts) */
+
+.quicksand {font-family: "Quicksand", sans-serif;}
+
+.lato {font-family: "Lato", sans-serif}
+
+/* MODAL: Main */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    width: 452.39px;
+    height: 350px;
+}
+
+.modal-meanwhile-sm {
+    width: 450px;
+    height: 225px;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* MODAL: Overlay */
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+  
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}

@@ -1,0 +1,81 @@
+<!-- Redirect for GitHub pages requirements  -> direct (./dist/index.html)-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="0; URL=">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;500;600;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/svg" href="./assets/NorthAfrica.svg">
+        <title>
+            North Africa Through The Ages | Landing
+        </title>
+    </head>
+    <body>
+        <style>
+            body {
+                background-color: #000;
+                color: #fff;
+                font-family: 'Quicksand', sans-serif;
+            }
+            .container {
+                height: 100vh;
+            }
+            .link {
+                text-decoration: none;
+            }
+            .landing {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 550px;
+                height: 600px;
+                border: 5px solid #48A8EE;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .landing-header {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            .landing-link {
+                font-size: 1.8rem;
+                font-weight: bold;
+                padding: 1rem;
+                background-color: #48A8EE;
+                border-radius: 10px;
+                margin-top: 2rem;
+                transition: background-color 0.2s;
+            }
+            .landing-link:visited {color: #fff;}
+            .landing-link:hover {background-color: #3b8dc7;}
+            .landing-link:active {background-color: #3279ab;}
+            .sub {
+                margin-top: 2rem;
+            }
+            .sub-link {
+                color: #48A8EE;
+            }
+        </style>
+        <div class="container">
+            <div class="landing">
+                <h1 class="landing-header">
+                    North Africa Through The Ages
+                </h1>
+                <img src="./dist/assets/NorthAfrica.svg" alt="North Africa" width="50%" height="50%">
+                <a href="./dist/main.html" class="link landing-link">
+                    Visit
+                </a>
+                <p class="sub">
+                    by: <strong>Gautam Pradhan</strong> • source <a href="" class="link sub-link">here</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
